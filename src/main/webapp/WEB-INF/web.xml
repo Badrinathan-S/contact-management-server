@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>contact-management</display-name>
+  <welcome-file-list>
+    <welcome-file>Home.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+		<servlet-name>UserLoginServlet</servlet-name>
+		<servlet-class>com.contact.management.web.UserLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserLoginServlet</servlet-name>
+		<url-pattern>/user/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserRegisterServlet</servlet-name>
+		<servlet-class>com.contact.management.web.UserRegisterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserRegisterServlet</servlet-name>
+		<url-pattern>/user/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>CreateContact</servlet-name>
+		<servlet-class>com.contact.management.web.CreateContact</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CreateContact</servlet-name>
+		<url-pattern>/contact/create</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListContact</servlet-name>
+		<servlet-class>com.contact.management.web.ListContact</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListContact</servlet-name>
+		<url-pattern>/contact/list</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UpdateContact</servlet-name>
+		<servlet-class>com.contact.management.web.UpdateContact</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateContact</servlet-name>
+		<url-pattern>/contact/edit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditContact</servlet-name>
+		<servlet-class>com.contact.management.web.EditContact</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditContact</servlet-name>
+		<url-pattern>/contact/update</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteContact</servlet-name>
+		<servlet-class>com.contact.management.web.DeleteContact</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteContact</servlet-name>
+		<url-pattern>/contact/delete</url-pattern>
+	</servlet-mapping>
+	
+</web-app>
